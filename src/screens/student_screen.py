@@ -30,10 +30,7 @@ def student_dashboard():
     with c1:
         header_dashboard()
     with c2:
-        st.markdown(
-            f'<h3 style="color:#000000;">Welcome, {student_data["name"]}!</h3>',
-            unsafe_allow_html=True,
-        )
+        st.subheader(f"Welcome, {student_data['name']}!", anchor=False)
         if st.button(
             "Logout",
             type="secondary",
@@ -49,10 +46,7 @@ def student_dashboard():
 
     c1, c2 = st.columns(2)
     with c1:
-        st.markdown(
-            '<h2 style="color:#303246;">Your Enrolled Subjects</h2>',
-            unsafe_allow_html=True,
-        )
+        st.header("Your Enrolled Subjects", anchor=False)
 
     with c2:
         if st.button("Enroll in Subject", type="primary", width="stretch"):
@@ -74,7 +68,7 @@ def student_dashboard():
 
         stats_map[sid]["total"] += 1
 
-        if logs.get("is_present"):
+        if log.get("is_present"):
             stats_map[sid]["attended"] += 1
 
     cols = st.columns(2)
@@ -115,42 +109,6 @@ def student_screen():
     style_background_dashboard()
     style_base_layout()
 
-    st.markdown(
-        """
-        <style>
-            [data-testid="stCameraInput"] label p,
-            [data-testid="stCameraInput"] [data-testid="stWidgetLabel"] p,
-            [data-testid="stAudioInput"] label p,
-            [data-testid="stAudioInput"] [data-testid="stWidgetLabel"] p {
-                color: #000000 !important;
-            }
-
-            [data-testid="stAudioInput"] button {
-                background: #5865F2 !important;
-                color: white !important;
-                border-radius: 1.5rem !important;
-                border: none !important;
-                transition: transform 0.25s ease-in-out !important;
-            }
-
-            [data-testid="stAudioInput"] button:hover {
-                transform: scale(1.05) !important;
-            }
-
-            [data-testid="stAudioInput"] button svg {
-                fill: white !important;
-                color: white !important;
-            }
-
-            [data-testid="stSpinner"],
-            [data-testid="stSpinner"] * {
-                color: #000000 !important;
-            }
-        </style>
-        """,
-        unsafe_allow_html=True,
-    )
-
     if "user_data" in st.session_state:
         student_dashboard()
         return
@@ -169,10 +127,7 @@ def student_screen():
             st.session_state["login_type"] = None
             st.rerun()
 
-    st.markdown(
-        '<h2 style="color:#202124; text-align:center;">Login using face id</h2>',
-        unsafe_allow_html=True,
-    )
+    st.header("Login using face id", text_alignment="center", anchor=False)
     st.space(2)
 
     photo_source = st.camera_input("Position your face in the center")
@@ -210,28 +165,16 @@ def student_screen():
                     st.rerun()
 
             else:
-                st.markdown(
-                    '<div style="background:#D6E6FF; color:#0B5CAD; padding:1rem 1.2rem; border-radius:0.6rem; font-family:Outfit,sans-serif;">Face not recognized ! you might be a new student</div>',
-                    unsafe_allow_html=True,
-                )
+                st.info("Face not recognized ! you might be a new student")
                 show_registration = True
 
     if show_registration:
         with st.container(border=True):
-            st.markdown(
-                '<h2 style="color:#000000;">Register new Profile</h2>',
-                unsafe_allow_html=True,
-            )
+            st.header("Register new Profile", anchor=False)
             new_name = st.text_input("Enter your name", placeholder="Eg.alan ritchson")
 
-            st.markdown(
-                '<h3 style="color:#000000;">Optional : voice enrollment</h3>',
-                unsafe_allow_html=True,
-            )
-            st.markdown(
-                '<div style="background:#D6E6FF; color:#0B5CAD; padding:1rem 1.2rem; border-radius:0.6rem; font-family:Outfit,sans-serif;">Enroll your voice only attendence</div>',
-                unsafe_allow_html=True,
-            )
+            st.subheader("Optional : voice enrollment", anchor=False)
+            st.info("Enroll your voice only attendence")
 
             audio_data = None
 
@@ -291,7 +234,8 @@ def student_screen():
             shortcut="control+enter",
             width="stretch",
         ):
-            st.info("Face ID login coming soon!")
+            if not photo_source:
+                st.error("Please take a photo first to login!")
 
     with btnc2:
         if st.button(
@@ -300,7 +244,6 @@ def student_screen():
             icon=":material/passkey:",
             width="stretch",
         ):
-            st.session_state["login_type"] = "student_password"
-            st.rerun()
+            st.info("Password login coming soon!")
 
     footer_dashboard()

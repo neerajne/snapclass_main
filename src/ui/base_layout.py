@@ -164,6 +164,14 @@ def style_base_layout():
             .stCameraInput button:hover {
                 transform: scale(1.05) !important;
             }
+
+            /* Camera input - live video full width */
+            [data-testid="stCameraInput"] video {
+                width: 100% !important;
+                height: auto !important;
+                object-fit: cover !important;
+            }
+
             .stTextInput button svg {
                 fill: white !important;
             }
