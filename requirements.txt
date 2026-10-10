@@ -17,5 +17,5 @@ segno
 pillow
 
 
-librosar
+librosa
 resemblyzer
