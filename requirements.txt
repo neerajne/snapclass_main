@@ -1,3 +1,4 @@
+--extra-index-url https://download.pytorch.org/whl/cpu
 streamlit
 numpy
 pandas
@@ -9,3 +10,6 @@ supabase
 bcrypt
 segno
 pillow
+
+torch
+resemblyzer
