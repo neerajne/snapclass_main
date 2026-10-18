@@ -103,19 +103,19 @@ The app opens at `http://localhost:8501`.
 
 ## Screenshots
 
-<img width="800" height="600" alt="Attendance_records" src="https://github.com/user-attachments/assets/e8d60adc-963b-44f0-aca2-64952c17d3b1" />
-<img width="800" height="600" alt="Attendance_report" src="https://github.com/user-attachments/assets/a7f62830-e948-405b-9171-f6f44da9c75b" />
-<img width="800" height="600" alt="capture_or_upload_photos" src="https://github.com/user-attachments/assets/99e29ace-d432-449e-844b-8a3a93859c4a" />
-<img width="428" height="329" alt="create_new_subject" src="https://github.com/user-attachments/assets/e6980f8f-0c55-401a-bd5f-b1eca06ff8c2" />
-<img width="365" height="239" alt="voice_enrollment" src="https://github.com/user-attachments/assets/dcd423f7-1f19-4d9f-9161-7fb99bcebdc0" />
-<img width="407" height="386" alt="voice_attendence" src="https://github.com/user-attachments/assets/e6f71a44-f97a-4f20-b824-e79ab0874a55" />
-<img width="461" height="287" alt="view_attendence" src="https://github.com/user-attachments/assets/9b8e7be2-afdd-4b65-95aa-8a0414a28e65" />
-<img width="455" height="319" alt="share_qr_code" src="https://github.com/user-attachments/assets/3bee723b-7397-4233-9829-412e77e8dec0" />
-<img width="487" height="390" alt="register_teacher" src="https://github.com/user-attachments/assets/735c978d-c59c-4603-b095-202dd7a25490" />
-<img width="431" height="410" alt="manage_subjects" src="https://github.com/user-attachments/assets/936bf32b-101b-49c5-a975-0feb8f2c59c6" />
-<img width="454" height="318" alt="login_teacher" src="https://github.com/user-attachments/assets/306e6ace-4a06-4712-9281-f9f81eabf5f4" />
-<img width="543" height="383" alt="homesnapclass" src="https://github.com/user-attachments/assets/eeab5fa8-5ff6-454b-a2b8-7c779cb3ee3e" />
-<img width="448" height="323" alt="enroll_in_subject_student" src="https://github.com/user-attachments/assets/1fcad7fb-dbfe-4740-8da5-ae7a8c98074b" />
+<img width="400" height="370" alt="Attendance_records" src="https://github.com/user-attachments/assets/e8d60adc-963b-44f0-aca2-64952c17d3b1" />
+<img width="400" height="370" alt="Attendance_report" src="https://github.com/user-attachments/assets/a7f62830-e948-405b-9171-f6f44da9c75b" />
+<img width="400" height="370" alt="capture_or_upload_photos" src="https://github.com/user-attachments/assets/99e29ace-d432-449e-844b-8a3a93859c4a" />
+<img width="400" height="370" alt="create_new_subject" src="https://github.com/user-attachments/assets/e6980f8f-0c55-401a-bd5f-b1eca06ff8c2" />
+<img width="400" height="370" alt="voice_enrollment" src="https://github.com/user-attachments/assets/dcd423f7-1f19-4d9f-9161-7fb99bcebdc0" />
+<img width="400" height="370" alt="voice_attendence" src="https://github.com/user-attachments/assets/e6f71a44-f97a-4f20-b824-e79ab0874a55" />
+<img width="400" height="370" alt="view_attendence" src="https://github.com/user-attachments/assets/9b8e7be2-afdd-4b65-95aa-8a0414a28e65" />
+<img width="400 " height="370" alt="share_qr_code" src="https://github.com/user-attachments/assets/3bee723b-7397-4233-9829-412e77e8dec0" />
+<img width="400" height="370" alt="register_teacher" src="https://github.com/user-attachments/assets/735c978d-c59c-4603-b095-202dd7a25490" />
+<img width="400" height="370" alt="manage_subjects" src="https://github.com/user-attachments/assets/936bf32b-101b-49c5-a975-0feb8f2c59c6" />
+<img width="400" height="370" alt="login_teacher" src="https://github.com/user-attachments/assets/306e6ace-4a06-4712-9281-f9f81eabf5f4" />
+<img width="400" height="370" alt="homesnapclass" src="https://github.com/user-attachments/assets/eeab5fa8-5ff6-454b-a2b8-7c779cb3ee3e" />
+<img width="400" height="370" alt="enroll_in_subject_student" src="https://github.com/user-attachments/assets/1fcad7fb-dbfe-4740-8da5-ae7a8c98074b" />
 
 
 
