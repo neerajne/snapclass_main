@@ -103,4 +103,4 @@ The app opens at `http://localhost:8501`.
 
 ## Screenshots
 
-_Add screenshots or a short demo GIF here: student face login, teacher dashboard, attendance result._
+<img width="1515" height="1038" alt="Attendance_records" src="https://github.com/user-attachments/assets/e8d60adc-963b-44f0-aca2-64952c17d3b1" />
