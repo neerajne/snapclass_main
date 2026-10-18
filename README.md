@@ -8,15 +8,17 @@ A web app that takes classroom attendance using face recognition and voice verif
 ## What it does
 
 1. Students sign in with their face (webcam). New students register with their name and, optionally, a voice sample.
-2. Teachers sign up and log in with a username and password, then create subjects. Each subject gets a join code, a shareable link and a QR code.
-3. Students enroll in a subject by entering the code, or by opening the join link or scanning the QR.
-4. Teachers pick a subject, upload or capture classroom photos, and run face analysis. The app detects every enrolled student in the photos and marks them present or absent.
-5. Teachers can also take attendance by voice, and the results are saved to the database.
-6. Students see their enrolled subjects with total classes and classes attended.
+2. An SVM classifier trained on the face embeddings stored in the database predicts which registered student the face belongs to, and the app logs in that matching student.
+3. Teachers sign up and log in with a username and password, then create subjects. Each subject gets a join code, a shareable link and a QR code.
+4. Students enroll in a subject by entering the code, or by opening the join link or scanning the QR.
+5. Teachers pick a subject, upload or capture classroom photos, and run face analysis. The app detects every enrolled student in the photos and marks them present or absent.
+6. Teachers can also take attendance by voice, and the results are saved to the database.
+7. Students see their enrolled subjects with total classes and classes attended.
 
 ## Tech stack
 
 - **Frontend:** Streamlit
+- **Face recognition:** dlib (dlib-bin) face embeddings, SVM classifier (scikit-learn)
 - **Face recognition:** dlib (dlib-bin), face_recognition_models, scikit-learn classifier
 - **Voice recognition:** Resemblyzer, librosa, PyTorch (CPU)
 - **Auth and database:** Supabase (PostgreSQL), bcrypt for teacher passwords
